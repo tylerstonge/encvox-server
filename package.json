@@ -1,0 +1,16 @@
+{
+  "name": "encvox",
+  "version": "0.0.1",
+  "description": "Encrypted voice chat server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tyler St. Onge",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "jsencrypt": "^2.3.1",
+    "socketio": "^1.0.0"
+  }
+}
