@@ -4,13 +4,21 @@
   "description": "Encrypted voice chat server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "lint": "./node_modules/semistandard/bin/cmd.js"
   },
   "author": "Tyler St. Onge",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tylerstonge/encvox-server.git"
+  },
+  "license": "GPL-3.0",
   "dependencies": {
     "express": "^4.15.3",
     "jsencrypt": "^2.3.1",
     "socketio": "^1.0.0"
+  },
+  "devDependencies": {
+    "semistandard": "^11.0.0"
   }
 }
