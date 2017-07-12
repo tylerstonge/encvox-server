@@ -27,7 +27,10 @@ io.on('connection', (socket) => {
 
   socket.on('message', (msg) => {
     console.log('[' + socket.id + '] -> [' + msg.recipient + ']');
-    socket.broadcast.to(msg.recipient).emit('message', msg.message);
+    socket.broadcast.to(msg.recipient).emit('message', {
+      sender: registry[socket.id].username,
+      message: msg.message
+    });
   });
 
   socket.on('disconnect', () => {
